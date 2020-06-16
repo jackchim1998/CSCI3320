@@ -1,0 +1,8 @@
+The best number of clusters is 5, which is same as number of centers of dataset creation process.
+When number of clusters is 5, the four measurement become largest.
+Below is the result (initial center is random and different for every time, reference only):
+         2clusters    3clusters    4clusters    5clusters    6clusters
+ARI        0.3699       0.5788       0.6997        0.9046      0.8337
+MRI        0.6559       0.9717       1.1729        1.4551      1.4471
+V measure  0.5746       0.7248       0.7929        0.9048      0.8622
+silhoutte  0.4863       0.5659       0.5649        0.5890      0.4936

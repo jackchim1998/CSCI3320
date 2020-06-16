@@ -1,0 +1,10 @@
+We need to preserve at least 113 dimensions to achieve POV larger than 0.95.
+The original dimensions is 784 (each pixel). 
+However some dimensions have less variance (e.g. The pixel in top left corner. It is always black in all images). 
+We can reduce those dimensions and still get relative important features.
+We can calculate POV to determine how much dimensions we need to preserve.
+POV = sum of top n highest eigenvalues / sum of all eigenvalues
+Then we can convert the image with 784 dimensions to 113 dimensions by X * V,
+where X is matrix 1500 * 784, each row is an image
+and V is matrix 784 * 113, each column is an eigenvector.
+ 

@@ -1,0 +1,11 @@
+Number of samples is 10000
+Number of features is 784 (before dimension reduction)
+
+In mean digits figure, I found that the digit 7 and digit 1 is very similar, also digit 5 and digit 6.
+The cluster may wrongly recognize them as same clusters.
+When the number of cluster is higher, I found that there is mean image like combination of digit 5 and 6.
+I can imagine the center of that cluster may locate between cluster of digit 5 and cluster of digit 6.
+
+Surprisingly, the best number of cluster is not 10.
+Although the 4 measurement scores for different number of clusters are similar, it seems 8 clusters has the best performance.
+I guess there are some digits are really very similar (e.g. 5 and 6), it is better to put them as same cluster.
